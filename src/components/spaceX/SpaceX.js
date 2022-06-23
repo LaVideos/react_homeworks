@@ -4,7 +4,8 @@
 // репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
 
 import {useEffect, useState} from "react";
-import ComponentOfSpaceX from "./ComponentOfSpaceX";
+
+import {ComponentOfSpaceX} from "../index";
 
 const SpaceX =()=>{
 
@@ -20,7 +21,7 @@ const SpaceX =()=>{
     return(
 
         <div>
-            {infoSpaceX.map((info,index)=><ComponentOfSpaceX
+            {infoSpaceX.filter(item=> item.launch_year !== '2020').map((info,index)=><ComponentOfSpaceX
                 key = {index}
                 mission_name = {info.mission_name}
                 launch_year={info.launch_year}

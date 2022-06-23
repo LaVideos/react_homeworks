@@ -1,5 +1,5 @@
 import './App.css';
-import SpaceX from "./hw2_Task2/Hw2_Task2";
+import {SpaceX} from "./components";
 
 function App() {
     return (
