@@ -1,5 +1,5 @@
 import React from 'react';
-import UserDetails from "./UserDetalis";
+import {UserDetails} from "../index";
 
 const User = (props) => {
     const {user, getInfo,/*info*/} = props;

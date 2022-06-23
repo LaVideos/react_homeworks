@@ -1,5 +1,5 @@
 import './App.css';
-import Users from "./Hw2_Task1/Users";
+import {Users} from "./components";
 
 
 

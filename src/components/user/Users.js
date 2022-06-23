@@ -4,8 +4,10 @@
 
 
 import {useEffect, useState} from "react";
-import User from "./User";
-import UserDetails from "./UserDetalis";
+
+import {User} from "../index";
+
+import {UserDetails} from "../index";
 
 export default function Users(){
 
