@@ -12,5 +12,4 @@ const User = ({item,getUserId}) => {
         </div>
     );
 };
-
 export default User;
