@@ -7,7 +7,7 @@ function App() {
     const getUserId = (value) => setUser(value);
 
     return (<div>
-        <h1>COMMENTS</h1>
+        <h1>POSTS</h1>
         <Posts id = {user.id}/>
         <hr/>
         <hr/>
