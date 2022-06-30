@@ -25,7 +25,7 @@ const AddUser = () => {
 
     return (
         // якщо в мене багато інпутів - то чи обов'язково прописувати всім register
-        // чи є якийсь кращий, динамічніший варіант
+        // чи є якийсь кращий, динамічніший варіант, та же історія з formState
         <div>
             <form action="" onSubmit={ handleSubmit(submit)}>
                 id - <input type="text" {...register('id',{required:true})}/><br/>
