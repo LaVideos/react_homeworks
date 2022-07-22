@@ -23,8 +23,7 @@ const CarFormComponent = () => {
        if(car4Update){
            await dispatch(carAction.updateById({id:car4Update.id, car:data}))
        }else {
-           await dispatch(carAction.addCarToArr(data));
-           // await dispatch(carAction.addCar());
+           await dispatch(carAction.addCar({car:data}));
 
        }
         reset();

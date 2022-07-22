@@ -15,6 +15,7 @@ const CarComponent = ({car}) => {
             <div>Price : {price}</div>
             <div>Year : {year}</div>
             <button onClick={()=>dispatch(carAction.setCar4Update(car))}>Update Car</button>
+            <button onClick={()=>dispatch(carAction.deleteCar(car.id))} >Delete Car</button>
         </div>
     );
 };
