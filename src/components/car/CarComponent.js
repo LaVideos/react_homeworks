@@ -1,21 +1,33 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
-import {carAction} from "../../redux";
+import {Actions} from "../../redux";
 
 const CarComponent = ({car}) => {
 
-    const {id, model, price, year} = car;
-
     const dispatch = useDispatch();
 
+    const {id,model,price,year} = car;
+
+
     return (
-        <div style={{background:'black', color:"white", margin:'10px',padding:'10px'}}>
-            <div>id : {id}</div>
-            <div>Model : {model}</div>
-            <div>Price : {price}</div>
-            <div>Year : {year}</div>
-            <button onClick={()=>dispatch(carAction.setCar4Update(car))}>Update Car</button>
-            <button onClick={()=>dispatch(carAction.deleteCar(car.id))} >Delete Car</button>
+        <div style={{background:'black', color:'white', margin:'20px', padding:'10px'}}>
+
+            <div>
+                <div>id:{id}</div>
+                <div>model:{model}</div>
+                <div>price:{price}</div>
+                <div>year:{year}</div>
+            </div>
+
+            <div>
+                <button onClick={()=>{
+                    dispatch(Actions.getCar4Update(car ))
+                }} >Edit</button>
+                <button onClick={()=>{
+                    dispatch(Actions.deleteCar({id}))
+                }}>Delete</button>
+            </div>
+
         </div>
     );
 };

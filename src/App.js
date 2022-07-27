@@ -8,8 +8,7 @@ function App() {
             <hr/>
             <hr/>
             <hr/>
-            <div>
-                <CarsComponent/>
+            <div><CarsComponent/>
             </div>
         </div>
     )
